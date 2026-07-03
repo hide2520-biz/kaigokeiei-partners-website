@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ｜介護経営パートナーズ</title>
+<meta name="description" content="介護経営パートナーズへのお問い合わせはこちらから。コンサルティングのご依頼、内容の詳細、その他ご質問など、お気軽にお問い合わせください。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-name">介護経営<span>パートナーズ</span></span>
+      <span class="brand-tagline">A Better World of Long-Term Care</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="メニューを開く">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </label>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="services/index.html">コンサルティングメニュー</a></li>
+        <li><a href="consulting.html">介護経営コンサル</a></li>
+        <li><a href="online-consultation.html">オンライン経営相談</a></li>
+        <li><a href="columns/index.html">コラム</a></li>
+        <li><a href="case-studies.html">事例</a></li>
+        <li><a href="company.html">運営者情報</a></li>
+        <li><a href="contact.html" class="nav-cta" aria-current="page">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="container">
+    <a href="index.html">HOME</a><span aria-hidden="true">›</span><span>お問い合わせ</span>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="hero-eyebrow">Contact</p>
+      <h1>お問い合わせ</h1>
+      <p>コンサルティングのご依頼、内容の詳細、その他ご質問など、下記フォームよりお気軽にお問い合わせください。</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="form-box">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden-field">
+            <label>この項目は入力しないでください<input name="bot-field"></label>
+          </p>
+
+          <div class="form-row">
+            <label for="company">会社名／屋号<span class="optional">任意</span></label>
+            <input type="text" id="company" name="company">
+          </div>
+
+          <div class="form-row">
+            <label for="name">氏名<span class="required">必須</span></label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="position">役職<span class="optional">任意</span></label>
+            <input type="text" id="position" name="position">
+          </div>
+
+          <div class="form-row">
+            <label for="tel">電話番号<span class="required">必須</span></label>
+            <input type="tel" id="tel" name="tel" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">メールアドレス<span class="required">必須</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-row">
+            <label>ご希望の内容<span class="optional">任意</span></label>
+            <div class="checkbox-group">
+              <label class="checkbox-item"><input type="checkbox" name="request" value="コンサルティングを依頼したい"> コンサルティングを依頼したい</label>
+              <label class="checkbox-item"><input type="checkbox" name="request" value="コンサルティング内容を詳しく知りたい"> コンサルティング内容を詳しく知りたい</label>
+              <label class="checkbox-item"><input type="checkbox" name="request" value="聞きたいことがある"> 聞きたいことがある</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="message">お問い合わせ内容<span class="required">必須</span></label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">送信する</button>
+            <p class="form-note">送信いただいた内容を確認の上、担当より折り返しご連絡いたします。</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <p class="brand-name">介護経営<span>パートナーズ</span></p>
+      <p>介護施設・事業所向けの経営コンサルティングを通じて、介護に携わるすべての人を支援します。</p>
+    </div>
+    <div class="footer-col">
+      <h4>サービス</h4>
+      <ul>
+        <li><a href="services/index.html">コンサルティングメニュー</a></li>
+        <li><a href="consulting.html">介護経営コンサル</a></li>
+        <li><a href="online-consultation.html">オンライン経営相談</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>コンテンツ</h4>
+      <ul>
+        <li><a href="columns/index.html">コラム</a></li>
+        <li><a href="case-studies.html">事例</a></li>
+        <li><a href="company.html">運営者情報</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>お問い合わせ</h4>
+      <ul>
+        <li><a href="contact.html">お問い合わせフォーム</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 介護経営パートナーズ</span>
+    <a href="privacy.html">プライバシーポリシー</a>
+  </div>
+</footer>
+
+</body>
+</html>
