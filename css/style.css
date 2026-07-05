@@ -172,6 +172,7 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
   border-radius: var(--radius);
   transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
+.header-cta .cta-short { display: none; }
 .header-cta:hover {
   background: var(--accent-light);
   transform: translateY(-1px);
@@ -204,6 +205,12 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 }
 @media (max-width: 480px) {
   .brand .brand-tagline { display: none; }
+  .site-header .container { padding: 0 16px; }
+  .header-right { gap: 8px; }
+  .brand .brand-name { font-size: 1rem; }
+  .header-cta { padding: 8px 12px; font-size: 0.78rem; }
+  .header-cta .cta-full { display: none; }
+  .header-cta .cta-short { display: inline; }
 }
 
 /* ==========================================================================
