@@ -874,7 +874,8 @@ article.column-article {
   margin-top: 80px;
 }
 .footer-main {
-  padding: 56px 0 40px;
+  padding-top: 56px;
+  padding-bottom: 40px;
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1fr;
   gap: 32px;
@@ -901,7 +902,8 @@ article.column-article {
 .footer-col a:hover { color: var(--gold-light); }
 .footer-bottom {
   border-top: 1px solid var(--border-dark);
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 0.78rem;
   color: rgba(169, 198, 232, 0.7);
   display: flex;
