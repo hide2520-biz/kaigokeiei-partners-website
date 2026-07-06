@@ -467,6 +467,7 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
   align-items: center;
   gap: 6px;
 }
+.card .card-more svg { width: 16px; height: 16px; flex-shrink: 0; }
 .card:hover .card-more { color: var(--gold); }
 .card a.card-link-wrap {
   position: absolute;
