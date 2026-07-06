@@ -657,7 +657,7 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
   flex-direction: column;
 }
 .column-card .column-thumb {
-  height: 150px;
+  aspect-ratio: 824 / 223;
   width: 100%;
   object-fit: cover;
   display: block;
