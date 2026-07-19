@@ -80,9 +80,15 @@
   </url>
   <url>
     <loc>https://kaigokeiei-partners.jp/columns/index.html</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kaigokeiei-partners.jp/columns/shogu-kaizen-jisseki-hokoku.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kaigokeiei-partners.jp/columns/bathing-efficiency-toilet.html</loc>
