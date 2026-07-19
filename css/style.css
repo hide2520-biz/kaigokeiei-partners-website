@@ -100,10 +100,20 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 }
 .brand {
   display: flex;
-  flex-direction: column;
-  line-height: 1.25;
+  align-items: center;
+  gap: 10px;
   flex-shrink: 0;
   white-space: nowrap;
+}
+.brand-logo {
+  height: 36px;
+  width: 36px;
+  flex-shrink: 0;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
 }
 .brand .brand-name {
   font-size: 1.02rem;
@@ -207,6 +217,7 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
   .brand .brand-tagline { display: none; }
   .site-header .container { padding: 0 16px; }
   .header-right { gap: 8px; }
+  .brand-logo { height: 30px; width: 30px; }
   .brand .brand-name { font-size: 1rem; }
   .header-cta { padding: 8px 12px; font-size: 0.78rem; }
   .header-cta .cta-full { display: none; }
