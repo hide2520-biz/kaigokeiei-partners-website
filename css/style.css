@@ -713,6 +713,20 @@ article.column-article {
 }
 .article-body p { margin-bottom: 1.3em; color: var(--text); }
 .article-body p.note { font-size: 0.85rem; color: var(--text-muted); }
+.article-toc {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 32px;
+}
+.article-toc-title { font-weight: 700; color: var(--navy-900); margin-bottom: 10px; font-size: 0.95rem; }
+.article-toc ol { list-style: none; counter-reset: toc-counter; padding-left: 0; margin: 0; }
+.article-toc li { counter-increment: toc-counter; margin-bottom: 8px; font-size: 0.92rem; }
+.article-toc li::before { content: counter(toc-counter) ". "; color: var(--gold); font-weight: 700; }
+.article-toc a { color: var(--navy-800); text-decoration: none; }
+.article-toc a:hover { text-decoration: underline; color: var(--gold); }
+.article-body h2 { scroll-margin-top: 90px; }
 .article-nav {
   margin-top: 36px;
   padding-top: 24px;
