@@ -711,6 +711,7 @@ article.column-article {
   background: var(--bg-alt);
   border-left: 4px solid var(--gold);
 }
+.article-body h3 { font-size: 1rem; color: var(--navy-800); margin: 24px 0 10px; font-weight: 700; }
 .article-body p { margin-bottom: 1.3em; color: var(--text); }
 .article-body p.note { font-size: 0.85rem; color: var(--text-muted); }
 .article-toc {
