@@ -272,10 +272,10 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 .page-hero {
   background: linear-gradient(120deg, var(--navy-900), var(--navy-700));
   color: var(--white);
-  padding: 36px 0;
+  padding: 22px 0;
 }
-.page-hero .hero-eyebrow { margin-bottom: 8px; }
-.page-hero h1 { color: var(--white); font-size: clamp(1.4rem, 2.6vw, 1.9rem); margin-bottom: 6px; }
+.page-hero .hero-eyebrow { margin-bottom: 4px; }
+.page-hero h1 { color: var(--white); font-size: clamp(1.25rem, 2.2vw, 1.6rem); margin-bottom: 4px; }
 .page-hero p { color: var(--pale-blue); max-width: 680px; margin-bottom: 0; }
 
 .hero-photo {
