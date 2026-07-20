@@ -272,11 +272,11 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 .page-hero {
   background: linear-gradient(120deg, var(--navy-900), var(--navy-700));
   color: var(--white);
-  padding: 22px 0;
+  padding: 14px 0;
 }
-.page-hero .hero-eyebrow { margin-bottom: 4px; }
-.page-hero h1 { color: var(--white); font-size: clamp(1.25rem, 2.2vw, 1.6rem); margin-bottom: 4px; }
-.page-hero p { color: var(--pale-blue); max-width: 680px; margin-bottom: 0; }
+.page-hero .hero-eyebrow { margin-bottom: 2px; font-size: 0.72rem; }
+.page-hero h1 { color: var(--white); font-size: clamp(1.1rem, 1.8vw, 1.35rem); margin-bottom: 2px; }
+.page-hero p { color: var(--pale-blue); max-width: 680px; margin-bottom: 0; font-size: 0.88rem; }
 
 .hero-photo {
   background-size: cover;
