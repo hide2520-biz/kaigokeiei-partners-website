@@ -213,15 +213,26 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
   .nav-toggle:checked ~ .global-nav { max-height: 640px; }
   .header-cta { padding: 9px 14px; font-size: 0.82rem; }
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .brand .brand-tagline { display: none; }
   .site-header .container { padding: 0 16px; }
   .header-right { gap: 8px; }
   .brand-logo { height: 30px; width: 30px; }
-  .brand .brand-name { font-size: 1rem; }
+  .brand { min-width: 0; }
+  .brand-text { min-width: 0; overflow: hidden; }
+  .brand .brand-name {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 40vw;
+  }
   .header-cta { padding: 8px 12px; font-size: 0.78rem; }
   .header-cta .cta-full { display: none; }
   .header-cta .cta-short { display: inline; }
+}
+@media (max-width: 420px) {
+  .brand .brand-name { max-width: 32vw; font-size: 0.92rem; }
+  .header-cta { padding: 7px 10px; font-size: 0.72rem; }
 }
 
 /* ==========================================================================
@@ -549,6 +560,32 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 }
 .step-item h3 { font-size: 0.95rem; margin-bottom: 6px; }
 .step-item p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0; }
+.step-list.cols-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .step-list.cols-3 { grid-template-columns: 1fr; } }
+
+/* ==========================================================================
+   FAQ（アコーディオン）
+   ========================================================================== */
+.faq-list { display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px 20px;
+}
+.faq-item summary {
+  cursor: pointer;
+  padding: 16px 0;
+  font-weight: 700;
+  color: var(--navy-800);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::before { content: "Q"; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+.faq-item p { padding: 0 0 18px 20px; margin: 0; color: var(--text-muted); }
 
 /* ==========================================================================
    お悩みリスト
@@ -954,4 +991,130 @@ article.column-article {
   .section { padding: 52px 0; }
   .hero { padding: 60px 0 64px; }
   .cta-banner { padding: 36px 22px; }
+}
+
+/* ==========================================================================
+   セクション背景バリエーション（味気なさ対策・ページ限定利用）
+   ========================================================================== */
+.section-soft { background: #f7f2e8; }
+
+/* ==========================================================================
+   写真＋テキストの2カラムブロック
+   ========================================================================== */
+.split-block {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+.split-block.reverse { flex-direction: row-reverse; }
+.split-block img {
+  width: 42%;
+  flex-shrink: 0;
+  border-radius: var(--radius);
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  box-shadow: 0 16px 32px rgba(10, 24, 48, 0.12);
+}
+.split-block .split-body { flex: 1; }
+.split-block .split-body h2 { margin-bottom: 14px; }
+.split-block .split-body > p { color: var(--text-muted); }
+@media (max-width: 760px) {
+  .split-block, .split-block.reverse { flex-direction: column; }
+  .split-block img { width: 100%; }
+}
+
+/* ==========================================================================
+   カードアイコンの配色バリエーション（味気なさ対策・ページ限定利用）
+   ========================================================================== */
+.card-grid.varied-icons .card:nth-child(4n+1) .card-icon { background: var(--navy-900); color: var(--gold-light); }
+.card-grid.varied-icons .card:nth-child(4n+2) .card-icon { background: var(--gold); color: var(--white); }
+.card-grid.varied-icons .card:nth-child(4n+3) .card-icon { background: var(--accent); color: var(--white); }
+.card-grid.varied-icons .card:nth-child(4n+4) .card-icon { background: var(--navy-600); color: var(--gold-light); }
+.card-grid.varied-icons .card:nth-child(4n+1) { border-top: 3px solid var(--navy-900); background: #f4f6f9; }
+.card-grid.varied-icons .card:nth-child(4n+2) { border-top: 3px solid var(--gold); background: #faf6ec; }
+.card-grid.varied-icons .card:nth-child(4n+3) { border-top: 3px solid var(--accent); background: #fdf3ec; }
+.card-grid.varied-icons .card:nth-child(4n+4) { border-top: 3px solid var(--navy-600); background: #eef2f7; }
+
+/* service-hub-card・case-tagの配色バリエーション（味気なさ対策・ページ限定利用） */
+.card-grid.varied-icons .service-hub-card:nth-child(4n+1) { border-left-color: var(--navy-900); }
+.card-grid.varied-icons .service-hub-card:nth-child(4n+2) { border-left-color: var(--gold); }
+.card-grid.varied-icons .service-hub-card:nth-child(4n+3) { border-left-color: var(--accent); }
+.card-grid.varied-icons .service-hub-card:nth-child(4n+4) { border-left-color: var(--navy-600); }
+.card-grid.varied-icons .card:nth-child(4n+1) .case-tag { background: var(--navy-900); color: var(--gold-light); }
+.card-grid.varied-icons .card:nth-child(4n+2) .case-tag { background: var(--gold); color: var(--white); }
+.card-grid.varied-icons .card:nth-child(4n+3) .case-tag { background: var(--accent); color: var(--white); }
+.card-grid.varied-icons .card:nth-child(4n+4) .case-tag { background: var(--navy-600); color: var(--gold-light); }
+
+/* ==========================================================================
+   ご相談の流れ：アイコン＋接続線バージョン（味気なさ対策・ページ限定利用）
+   ========================================================================== */
+.step-list.cols-3 { position: relative; counter-reset: none; }
+.step-list.cols-3::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: calc(100% / 6);
+  right: calc(100% / 6);
+  height: 2px;
+  background: var(--border);
+  z-index: 0;
+}
+@media (max-width: 900px) { .step-list.cols-3::before { display: none; } }
+.step-list.cols-3 .step-item {
+  background: transparent;
+  border: none;
+  padding: 0 14px;
+  text-align: center;
+}
+.step-list.cols-3 .step-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--navy-900);
+  color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  position: relative;
+  z-index: 1;
+  border: 5px solid #f7f2e8;
+}
+.step-list.cols-3 .step-icon svg { width: 24px; height: 24px; }
+.step-list.cols-3 .step-num {
+  font-family: var(--font);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.step-list.cols-3 h3 { font-size: 1.02rem; }
+.step-list.cols-3 p { font-size: 0.88rem; }
+
+/* ==========================================================================
+   FAQ：アクセント強化（味気なさ対策・ページ限定利用）
+   ========================================================================== */
+.faq-list.accent-q .faq-item { border-left: 3px solid var(--gold-light); }
+.faq-list.accent-q .faq-item summary::before {
+  content: "Q";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--navy-900);
+  color: var(--gold-light);
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   スクロールリビール（味気なさ対策・ページ限定利用）
+   ========================================================================== */
+.reveal { transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.reveal-armed { opacity: 0; transform: translateY(18px); }
+.reveal.reveal-armed.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal.reveal-armed { opacity: 1; transform: none; transition: none; }
 }
