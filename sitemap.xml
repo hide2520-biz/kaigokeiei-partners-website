@@ -80,7 +80,7 @@
   </url>
   <url>
     <loc>https://kaigokeiei-partners.jp/columns/index.html</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -101,6 +101,36 @@
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kaigokeiei-partners.jp/columns/yakkyoku-tsukaitaose.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kaigokeiei-partners.jp/columns/fukuyaku-kanri-kaikaku.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kaigokeiei-partners.jp/columns/saiteichingin-kaigo.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kaigokeiei-partners.jp/columns/saiteichingin-2026-mokuyasu.html</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kaigokeiei-partners.jp/columns/gyomu-kaizen-guide.html</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kaigokeiei-partners.jp/columns/bathing-efficiency-toilet.html</loc>
