@@ -592,6 +592,8 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
    ========================================================================== */
 .issue-list { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 700px) { .issue-list { grid-template-columns: 1fr; } }
+.issue-list.cols-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .issue-list.cols-3 { grid-template-columns: 1fr; } }
 .issue-item {
   display: flex;
   gap: 12px;
@@ -1044,6 +1046,34 @@ article.column-article {
 .card-grid.varied-icons .card:nth-child(4n+2) .case-tag { background: var(--gold); color: var(--white); }
 .card-grid.varied-icons .card:nth-child(4n+3) .case-tag { background: var(--accent); color: var(--white); }
 .card-grid.varied-icons .card:nth-child(4n+4) .case-tag { background: var(--navy-600); color: var(--gold-light); }
+
+/* ==========================================================================
+   汎用：issue-item / feature-block / case-block の配色バリエーション
+   （味気なさ対策・ページ限定利用、.varied-accentを付けた親要素配下でのみ有効）
+   ========================================================================== */
+.varied-accent.issue-list .issue-item:nth-child(4n+1) svg { color: var(--navy-900); }
+.varied-accent.issue-list .issue-item:nth-child(4n+2) svg { color: var(--gold); }
+.varied-accent.issue-list .issue-item:nth-child(4n+3) svg { color: var(--accent); }
+.varied-accent.issue-list .issue-item:nth-child(4n+4) svg { color: var(--navy-600); }
+
+.varied-accent .feature-block:nth-child(4n+1) .feature-num { border-color: var(--navy-900); color: var(--navy-900); }
+.varied-accent .feature-block:nth-child(4n+2) .feature-num { border-color: var(--gold); color: var(--gold); }
+.varied-accent .feature-block:nth-child(4n+3) .feature-num { border-color: var(--accent); color: var(--accent); }
+.varied-accent .feature-block:nth-child(4n+4) .feature-num { border-color: var(--navy-600); color: var(--navy-600); }
+
+.varied-accent .case-block:nth-child(4n+1) { border-top: 3px solid var(--navy-900); }
+.varied-accent .case-block:nth-child(4n+2) { border-top: 3px solid var(--gold); }
+.varied-accent .case-block:nth-child(4n+3) { border-top: 3px solid var(--accent); }
+.varied-accent .case-block:nth-child(4n+4) { border-top: 3px solid var(--navy-600); }
+.varied-accent .case-block:nth-child(4n+1) .case-tag { background: var(--navy-900); color: var(--gold-light); }
+.varied-accent .case-block:nth-child(4n+2) .case-tag { background: var(--gold); color: var(--white); }
+.varied-accent .case-block:nth-child(4n+3) .case-tag { background: var(--accent); color: var(--white); }
+.varied-accent .case-block:nth-child(4n+4) .case-tag { background: var(--navy-600); color: var(--gold-light); }
+
+.varied-accent .case-study:nth-child(4n+1) .case-tag { background: var(--navy-900); color: var(--gold-light); }
+.varied-accent .case-study:nth-child(4n+2) .case-tag { background: var(--gold); color: var(--white); }
+.varied-accent .case-study:nth-child(4n+3) .case-tag { background: var(--accent); color: var(--white); }
+.varied-accent .case-study:nth-child(4n+4) .case-tag { background: var(--navy-600); color: var(--gold-light); }
 
 /* ==========================================================================
    ご相談の流れ：アイコン＋接続線バージョン（味気なさ対策・ページ限定利用）

@@ -14,11 +14,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>新規開業 訪問介護｜介護経営パートナーズ</title>
-<meta name="description" content="訪問介護の新規開業支援。エリア需要調査、サービス提供責任者の配置計画、指定申請、開業後のケアマネジャー営業まで一貫してサポートします。">
+<meta name="description" content="訪問介護の新規開業支援。エリア需要調査、サービス提供責任者の配置計画、指定申請から、開業後のケアマネジャー営業まで、実際に介護施設を運営してきた経験に基づいて一貫してサポートします。">
 <link rel="canonical" href="https://kaigokeiei-partners.jp/services/new-homecare.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="新規開業 訪問介護｜介護経営パートナーズ">
-<meta property="og:description" content="訪問介護の新規開業支援。エリア需要調査、サービス提供責任者の配置計画、指定申請、開業後のケアマネジャー営業まで一貫してサポートします。">
+<meta property="og:description" content="訪問介護の新規開業支援。エリア需要調査、サービス提供責任者の配置計画、指定申請から、開業後のケアマネジャー営業まで、実際に介護施設を運営してきた経験に基づいて一貫してサポートします。">
 <meta property="og:url" content="https://kaigokeiei-partners.jp/services/new-homecare.html">
 <meta property="og:site_name" content="介護経営パートナーズ">
 <meta property="og:image" content="https://kaigokeiei-partners.jp/images/ogp-default.jpg">
@@ -49,6 +49,32 @@
     "name": "金親 英聖"
   },
   "description": "介護施設・事業所向けの経営コンサルティング。新規開業支援、収益改善、介護事業デューデリジェンス等を、全国対応・オンライン相談で提供します。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "HOME",
+      "item": "https://kaigokeiei-partners.jp/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "コンサルティングメニュー",
+      "item": "https://kaigokeiei-partners.jp/services/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "新規開業 訪問介護",
+      "item": "https://kaigokeiei-partners.jp/services/new-homecare.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -105,7 +131,7 @@
   </section>
 
   <section class="section section-alt">
-    <div class="container">
+    <div class="container reveal">
       <article class="column-article">
         <div class="article-body">
           <p>訪問介護は事務所の広さに左右されにくい分、「そのエリアに需要があるか」「サービス提供責任者を確保できるか」が事業の成否を分けます。開業前に、対象エリアの認定者数と既存事業所の供給量を比較し、伸びしろがあるかを客観的に見極めることから始めます。</p>
@@ -117,7 +143,7 @@
   </section>
 
   <section class="section">
-    <div class="container">
+    <div class="container reveal">
       <div class="cta-banner">
         <h2>まずは無料相談から</h2>
         <p>開業を検討中のエリア・時期が決まっていない段階でも構いません。まずはお聞かせください。</p>
@@ -164,6 +190,26 @@
     <a href="../privacy.html">プライバシーポリシー</a>
   </div>
 </footer>
+
+<script>
+  // スクロールリビール（このページ限定の軽量演出）
+  // 要素は既定で表示状態。JSが正常に動く場合のみ.reveal-armedを付けて一時的に隠し、
+  // スクロールで視界に入ったら.is-visibleを付けて表示する。
+  // JS無効・スクリプトエラー・広告ブロッカー等で以下が実行されなくても、要素は最初から見えているため欠落しない。
+  if ('IntersectionObserver' in window) {
+    const revealTargets = document.querySelectorAll('.reveal');
+    revealTargets.forEach((el) => el.classList.add('reveal-armed'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealTargets.forEach((el) => observer.observe(el));
+  }
+</script>
 
 </body>
 </html>
