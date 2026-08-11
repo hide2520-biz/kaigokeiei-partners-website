@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1PRXTXB12"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F1PRXTXB12');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>デイサービス減少はなぜ続くか｜介護経営パートナーズ</title>
+<meta name="description" content="2026年4月、デイサービス事業所数は4万2,125ヵ所で4年連続減少、初めて大規模型も減少に転じました。収支データが示す本当の理由、地域密着型M&A市場の実態、そして生き残る道を、実際に経営する立場から解説します。">
+<link rel="canonical" href="https://kaigokeiei-partners.jp/columns/daycare-decline-outlook.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="デイサービスはなぜ減少が続くのか？デイサービス経営の未来｜介護経営パートナーズ">
+<meta property="og:description" content="2026年4月、デイサービス事業所数は4万2,125ヵ所で4年連続減少、初めて大規模型も減少に転じました。収支データが示す本当の理由、地域密着型M&A市場の実態、そして生き残る道を、実際に経営する立場から解説します。">
+<meta property="og:url" content="https://kaigokeiei-partners.jp/columns/daycare-decline-outlook.html">
+<meta property="og:site_name" content="介護経営パートナーズ">
+<meta property="og:image" content="https://kaigokeiei-partners.jp/images/column-daycare-decline-outlook.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  /* このコラム内のデータ図版で使用する配色トークン(dataviz検証済み・CVDセーフ) */
+  .chart-card { background:var(--bg-alt); border:1px solid var(--border); border-radius:8px; padding:1.25rem 1.5rem 1rem; margin:0 0 1.5rem; }
+  .chart-card .chart-idx { font-size:0.72rem; font-weight:700; letter-spacing:.06em; color:var(--gold); margin:0 0 0.2rem; }
+  .chart-card h3 { font-size:1rem; color:var(--navy-900); margin:0 0 0.2rem; }
+  .chart-card .chart-sub { font-size:0.85rem; color:var(--text-muted); margin:0 0 0.75rem; }
+  .chart-card svg { width:100%; height:auto; overflow:visible; display:block; }
+  .chart-card .chart-legend { display:flex; gap:1rem; margin-top:0.5rem; font-size:0.78rem; color:var(--text-muted); }
+  .chart-card .chart-legend span { display:inline-flex; align-items:center; gap:5px; }
+  .chart-card .chart-legend i { width:9px; height:9px; border-radius:2px; display:inline-block; }
+  .chart-card .chart-source { margin-top:0.65rem; padding-top:0.55rem; border-top:1px solid var(--border); font-size:0.72rem; color:var(--text-muted); line-height:1.6; }
+  .cs1 { --s: #2a78d6; } .cs2 { --s: #eb6834; } .cgood { --s: #0ca30c; } .ccrit { --s: #d03b3b; }
+  .chart-card .axis-lbl { font-size:10.5px; fill:var(--text-muted); }
+  .chart-card .val-lbl { font-size:11.5px; font-weight:700; fill:var(--text); }
+  .chart-card .val-lbl-inv { font-size:11.5px; font-weight:700; fill:#ffffff; }
+  .chart-card .cat-lbl { font-size:11px; fill:var(--text-muted); }
+  .chart-card .gl { stroke:var(--border); stroke-width:1; }
+  .chart-card .bl { stroke:#c3c2b7; stroke-width:1; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "介護経営パートナーズ",
+  "url": "https://kaigokeiei-partners.jp/",
+  "logo": "https://kaigokeiei-partners.jp/images/logo-mark.png",
+  "image": "https://kaigokeiei-partners.jp/images/ogp-default.jpg",
+  "telephone": "+81-70-2490-0233",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "鴨川2-5-8",
+    "addressLocality": "桶川市",
+    "addressRegion": "埼玉県",
+    "addressCountry": "JP"
+  },
+  "areaServed": "JP",
+  "founder": {
+    "@type": "Person",
+    "name": "金親 英聖"
+  },
+  "description": "介護施設・事業所向けの経営コンサルティング。新規開業支援、収益改善、介護事業デューデリジェンス等を、全国対応・オンライン相談で提供します。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "HOME",
+      "item": "https://kaigokeiei-partners.jp/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "コラム",
+      "item": "https://kaigokeiei-partners.jp/columns/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "デイサービスはなぜ減少が続くのか？デイサービス経営の未来",
+      "item": "https://kaigokeiei-partners.jp/columns/daycare-decline-outlook.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "デイサービスはなぜ減少が続くのか？デイサービス経営の未来",
+  "description": "2026年4月、デイサービス事業所数は4万2,125ヵ所で4年連続減少、初めて大規模型も減少に転じました。収支データが示す本当の理由、地域密着型M&A市場の実態、そして生き残る道を、実際に経営する立場から解説します。",
+  "image": "https://kaigokeiei-partners.jp/images/column-daycare-decline-outlook.jpg",
+  "datePublished": "2026-08-10",
+  "dateModified": "2026-08-10",
+  "author": {
+    "@type": "Person",
+    "name": "金親英聖",
+    "url": "https://kaigokeiei-partners.jp/profile.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "介護経営パートナーズ",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kaigokeiei-partners.jp/images/logo-mark.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kaigokeiei-partners.jp/columns/daycare-decline-outlook.html"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html">
+      <img class="brand-logo" src="../images/logo-mark.png" alt="">
+      <span class="brand-text">
+        <span class="brand-name">介護経営<span>パートナーズ</span></span>
+        <span class="brand-tagline">A Better World of Long-Term Care</span>
+      </span>
+    </a>
+    <div class="header-right">
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="メニューを開く">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </label>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../services/index.html">コンサルティングメニュー</a></li>
+        <li><a href="../consulting.html">介護経営コンサル</a></li>
+        <li><a href="../profile.html">コンサル担当紹介</a></li>
+        <li><a href="../online-consultation.html">オンライン経営相談</a></li>
+        <li><a href="index.html" aria-current="page">コラム</a></li>
+        <li><a href="../case-studies.html">事例</a></li>
+        <li><a href="../company.html">運営者情報</a></li>
+      </ul>
+    </nav>
+
+    <a class="header-cta" href="../contact.html"><span class="cta-full">無料相談を申し込む</span><span class="cta-short">無料相談</span></a>
+  </div>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="container">
+    <a href="../index.html">HOME</a><span aria-hidden="true">›</span><a href="index.html">コラム</a><span aria-hidden="true">›</span><span>デイサービスはなぜ減少が続くのか？デイサービス経営の未来</span>
+  </div>
+</nav>
+
+<main id="main">
+  <section class="section section-alt">
+    <div class="container">
+      <article class="column-article">
+        <img class="article-featured-image" src="../images/column-daycare-decline-outlook.jpg" alt="デイサービスはなぜ減少が続くのか？デイサービス経営の未来" loading="lazy">
+        <header class="article-header">
+          <p class="column-date">2026.08.10</p>
+          <h1>デイサービスはなぜ減少が続くのか？デイサービス経営の未来</h1>
+          <p style="font-size:0.85rem;color:var(--text-muted);">執筆者：<a href="../profile.html">金親英聖</a>（介護経営パートナーズ代表）</p>
+        </header>
+        <div class="article-body">
+          <p>2026年7月末、厚生労働省「介護給付費等実態統計」の最新データが公表されました。2026年4月審査分の通所介護(デイサービス)事業所数は4万2,125ヵ所。前年から531ヵ所減り、4年連続の減少です。減少そのものは既に何度も報じられてきた話ですが、今回の数字にはこれまでと違う点が一つあります。これまで唯一増え続けていた通常規模・大規模型が、初めて減少に転じたことです。私自身、埼玉県内で地域密着型デイサービス(定員18名)を経営する立場として、この数字をどう読むべきか整理してみます。</p>
+
+          <nav class="article-toc" aria-label="目次">
+            <p class="article-toc-title">目次</p>
+            <ol>
+              <li><a href="#suii">数字で見る「4年連続減少」— 今年、潮目が変わった</a></li>
+              <li><a href="#riyu">なぜ減っているのか — 「儲からないから」だけでは説明がつかない</a></li>
+              <li><a href="#tousan">倒産よりも「静かな撤退」が実態</a></li>
+              <li><a href="#kadoritsu">稼働率という物差しの、その先にある現実</a></li>
+              <li><a href="#ma">経営者の実体験:「0円でも売れない」M&A市場</a></li>
+              <li><a href="#jinzai">人手不足がさらに追い打ちをかける</a></li>
+              <li><a href="#mirai">デイサービス経営の未来 — 淘汰の先で生き残る道</a></li>
+              <li><a href="#matome">まとめ</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="suii">数字で見る「4年連続減少」— 今年、潮目が変わった</h2>
+          <p>まず全体像を数字で確認します。通所介護の事業所数は、令和6年4月の4万3,018ヵ所から、令和7年4月に4万2,656ヵ所(▲362)、令和8年4月に<strong>4万2,125ヵ所(▲531)</strong>と減少を続けています。減少幅そのものが年々広がっているのが分かります。</p>
+
+          <p>より重要なのは内訳の変化です。地域密着型(定員18名以下)は令和7年に388ヵ所減、令和8年に350ヵ所減と、一貫して減り続けてきました。一方、通常規模・大規模型は令和7年こそ27ヵ所の増加でしたが、<strong>令和8年は一転して181ヵ所の減少に転じています</strong>。「小規模だけが淘汰され、大規模は生き残る」という単純な構図ではなくなってきたことを、この数字は示しています。</p>
+
+          <p>この変化が意味するのは、「小規模だから危ない、大規模だから安全」という単純な規模論では、もう対応が立てられないということです。次章で見るとおり、実際に収支データを見ても、規模の大小と経営の安定は必ずしも一致していません。</p>
+
+          <h2 id="riyu">なぜ減っているのか — 「儲からないから」だけでは説明がつかない</h2>
+          <p>事業所数が減っているというと、真っ先に「儲からなくなったから」という理由を思い浮かべる方が多いと思います。本当にそうなのでしょうか。厚生労働省「令和7年度介護事業経営概況調査」を見ると、この説明はやや単純化しすぎです。</p>
+
+          <div class="chart-card">
+            <p class="chart-idx">図1</p>
+            <h3>収支差率の推移</h3>
+            <p class="chart-sub">地域密着型は改善、通常規模・大規模型は悪化</p>
+            <svg viewBox="0 0 460 200" role="img" aria-label="収支差率の推移、地域密着型と通常規模大規模型、令和5年度決算から令和6年度決算">
+              <line class="gl" x1="60" y1="150" x2="420" y2="150"/>
+              <text class="axis-lbl" x="45" y="154" text-anchor="end">5%</text>
+              <line class="gl" x1="60" y1="90" x2="420" y2="90"/>
+              <text class="axis-lbl" x="45" y="94" text-anchor="end">6%</text>
+              <line class="gl" x1="60" y1="30" x2="420" y2="30"/>
+              <text class="axis-lbl" x="45" y="34" text-anchor="end">7%</text>
+              <text class="cat-lbl" x="140" y="180" text-anchor="middle">R5年度決算</text>
+              <text class="cat-lbl" x="340" y="180" text-anchor="middle">R6年度決算</text>
+              <polyline points="140,60 340,78" fill="none" stroke="#2a78d6" stroke-width="2.5"/>
+              <circle cx="140" cy="60" r="4.5" fill="#2a78d6" stroke="var(--bg-alt)" stroke-width="2"/>
+              <circle cx="340" cy="78" r="4.5" fill="#2a78d6" stroke="var(--bg-alt)" stroke-width="2"/>
+              <text class="val-lbl" x="140" y="46" text-anchor="middle">6.5%</text>
+              <text class="val-lbl" x="365" y="82" text-anchor="start">6.2%</text>
+              <polyline points="140,102 340,72" fill="none" stroke="#eb6834" stroke-width="2.5"/>
+              <circle cx="140" cy="102" r="4.5" fill="#eb6834" stroke="var(--bg-alt)" stroke-width="2"/>
+              <circle cx="340" cy="72" r="4.5" fill="#eb6834" stroke="var(--bg-alt)" stroke-width="2"/>
+              <text class="val-lbl" x="140" y="120" text-anchor="middle">5.8%</text>
+              <text class="val-lbl" x="365" y="60" text-anchor="start">6.3%</text>
+            </svg>
+            <div class="chart-legend"><span><i style="background:#2a78d6"></i>通常規模・大規模型</span><span><i style="background:#eb6834"></i>地域密着型</span></div>
+            <p class="chart-source">出典:厚労省「令和7年度介護事業経営概況調査結果の概要(案)」税引前収支差率(物価高騰対策関連補助金含まず)</p>
+          </div>
+
+          <p>地域密着型の収支差率は令和5年度決算5.8%から令和6年度決算6.3%へとむしろ改善しています。それでも地域密着型の事業所減少数は通常規模・大規模型の倍近く(▲350 対 ▲181)ある。つまり<strong>「収支が悪化したから廃業する」という単純な因果関係だけでは、この減少ペースの差を説明できません</strong>。赤字事業所の割合を見ても、通所介護は37.4%(地域密着型37.2%)で全サービス平均(37.5%)とほぼ同水準であり、「デイサービスだけが特別に苦しい」わけでもありません。</p>
+
+          <p>コンサルタントとして経営相談を受ける立場から言うと、「儲かっているか、赤字か」という損益計算書の数字だけを見て廃業を判断している経営者は、むしろ少数派です。実際に廃業・撤退の背中を押しているのは、次章で見る「運営を続けられるかどうか」という、収支とは別の限界です。</p>
+
+          <h2 id="tousan">倒産よりも「静かな撤退」が実態</h2>
+          <p>「倒産が増えている」という報道もよく目にしますが、東京商工リサーチの集計を見ると、実態は少し違います。2025年の介護事業者倒産は176件で2年連続の過去最多を更新しましたが、突出しているのは訪問介護(91件)であり、<strong>通所・短期入所(デイサービス等)は45件、前年比ではむしろ19.6%減少</strong>しています。倒産(法的整理)以上に規模が大きいのが休廃業・解散で、2025年の介護事業者全体では653件と過去最多、うち通所・短期入所は95件でした。</p>
+
+          <div class="chart-card">
+            <p class="chart-idx">図2</p>
+            <h3>倒産・休廃業と事業所純減のギャップ</h3>
+            <p class="chart-sub">法人としての消滅(140件)は、事業所の減少(531ヵ所)のごく一部</p>
+            <svg viewBox="0 0 460 200" role="img" aria-label="通所・短期入所の倒産45件、休廃業・解散95件、通所介護事業所純減531ヵ所の比較">
+              <line class="gl" x1="90" y1="20" x2="90" y2="170"/>
+              <line class="gl" x1="207" y1="20" x2="207" y2="170"/>
+              <line class="gl" x1="323" y1="20" x2="323" y2="170"/>
+              <line class="gl" x1="440" y1="20" x2="440" y2="170"/>
+              <text class="axis-lbl" x="90" y="185" text-anchor="middle">0</text>
+              <text class="axis-lbl" x="207" y="185" text-anchor="middle">200</text>
+              <text class="axis-lbl" x="323" y="185" text-anchor="middle">400</text>
+              <text class="axis-lbl" x="440" y="185" text-anchor="middle">600</text>
+              <text class="cat-lbl" x="10" y="42" text-anchor="start">倒産</text>
+              <rect x="90" y="28" width="26.2" height="20" fill="#2a78d6"/>
+              <text class="val-lbl" x="122" y="43" text-anchor="start">45件</text>
+              <text class="cat-lbl" x="10" y="92" text-anchor="start">休廃業・解散</text>
+              <rect x="90" y="78" width="55.4" height="20" fill="#2a78d6"/>
+              <text class="val-lbl" x="151" y="93" text-anchor="start">95件</text>
+              <text class="cat-lbl" x="10" y="152" text-anchor="start">事業所純減</text>
+              <rect x="90" y="138" width="309.6" height="24" fill="#d03b3b"/>
+              <text class="val-lbl-inv" x="391" y="155" text-anchor="end">531ヵ所</text>
+            </svg>
+            <p class="chart-source">出典:東京商工リサーチ「2025年『介護事業者』倒産 過去最多の176件」「2025年『介護事業者』の休廃業・解散653件 過去最多を更新」の通所・短期入所内訳、厚労省「介護給付費等実態統計」令和8年4月審査分の前年比事業所減少数。倒産・休廃業は法人単位、事業所純減は事業所単位の集計であり、単純な差分ではない点に留意</p>
+          </div>
+
+          <p>通所・短期入所の倒産(45件)と休廃業・解散(95件)を合わせても140件。<strong>事業所の純減531ヵ所には遠く及びません</strong>。この差、391ヵ所をどう読むべきでしょうか。「人手不足で運営を続けられなくなり、静かに撤退している」という説明は分かりやすいのですが、正直に言うと根拠としてはやや弱いと感じています。倒産の原因別では「人手不足」が29件(前年比+45.0%、介護事業者全体)と急増していますが、これはあくまで倒産に至った法人に限った理由であり、統計に現れない391ヵ所の理由を直接示すものではありません。</p>
+          <p>むしろ実態として大きいのは、<strong style="color:var(--accent);">「本業を残したまま、不採算のデイサービス部門だけを整理する」という経営判断</strong>ではないかと、現場で見ていて感じます。特別養護老人ホームや病院、他の介護事業を併せ持つ社会福祉法人・医療法人などの複合経営体が、グループ全体では黒字を維持しながら、収支の合わないデイサービス部門だけを指定辞退・統合するケースです。この場合、法人自体は倒産も休廃業もしていないため、東京商工リサーチの統計には表れません。事業所数の統計だけに、静かに反映されることになります。</p>
+          <p>複合経営をされている法人ほど、この落とし穴には注意が必要だと感じています。デイサービス部門単体の収支を切り出して見たとき赤字が続いているのに、「グループ全体では黒字だから」という理由で<strong>問題を先送りしていないか</strong>。単独では気づきにくい不採算部門ほど、決断が遅れがちです。</p>
+
+          <p>さらに2026年に入って状況は悪化しています。日本経済新聞の報道によれば、2026年1〜5月のデイサービス倒産は27件で、2024・2025年の同期(いずれも25件)を上回り上半期として過去最多。光熱費・燃料費の高騰に加え、<strong>人手不足を原因とする倒産が前年同期の1件からわずか1年で8件に急増</strong>しました。廃業に至った事業所の92%が従業員10人未満、つまり私が経営しているような小規模事業所に集中しています。</p>
+
+          <p>コンサルタントとして強調しておきたいのは、倒産統計だけを見て「デイサービスはまだ大丈夫」と判断するのは危険だという点です。法人単位の倒産・休廃業に現れない391ヵ所の減少にこそ、複合経営における不採算部門の整理という、より静かで見えにくい撤退の実態が隠れています。</p>
+
+          <h2 id="kadoritsu">稼働率という物差しの、その先にある現実</h2>
+          <p>「儲かる・儲からない」よりも実態を映すのが利用率(稼働率)です。福祉医療機構(WAM)が2025年6月に公表した最新の調査(2023年度決算、融資先5,988事業所の実データ)によれば、事業所規模ごとに利用率と収支は明確に連動しています。</p>
+
+          <div class="chart-card">
+            <p class="chart-idx">図3</p>
+            <h3>規模別の利用率と損益分岐点</h3>
+            <p class="chart-sub">通常規模型のみ70%を割り込み、収支も4区分で最悪</p>
+            <svg viewBox="0 0 460 250" role="img" aria-label="利用率、地域密着型・通常規模型・大規模型ⅠとⅡ、損益分岐点70%の比較、2023年度">
+              <line class="gl" x1="90" y1="20" x2="90" y2="220"/>
+              <line class="gl" x1="230" y1="20" x2="230" y2="220"/>
+              <line class="gl" x1="370" y1="20" x2="370" y2="220"/>
+              <text class="axis-lbl" x="90" y="235" text-anchor="middle">0%</text>
+              <text class="axis-lbl" x="230" y="235" text-anchor="middle">50%</text>
+              <text class="axis-lbl" x="370" y="235" text-anchor="middle">100%</text>
+              <text class="cat-lbl" x="10" y="38" text-anchor="start">地域密着型</text>
+              <rect x="90" y="26" width="203.8" height="20" fill="#2a78d6"/>
+              <text class="val-lbl" x="304" y="41" text-anchor="start">72.8%</text>
+              <text class="axis-lbl" x="90" y="59" text-anchor="start">収支差額比率 +3.0% ・ 赤字43.2%</text>
+              <text class="cat-lbl" x="10" y="88" text-anchor="start">通常規模型</text>
+              <rect x="90" y="76" width="190.1" height="20" fill="#d03b3b"/>
+              <text class="val-lbl" x="290" y="91" text-anchor="start" fill="#d03b3b">67.9%</text>
+              <text class="axis-lbl" x="90" y="109" text-anchor="start">収支差額比率 +1.4%(最低) ・ 赤字45.7%(最高)</text>
+              <text class="cat-lbl" x="10" y="138" text-anchor="start">大規模型(Ⅰ)</text>
+              <rect x="90" y="126" width="207.2" height="20" fill="#2a78d6"/>
+              <text class="val-lbl" x="307" y="141" text-anchor="start">74.0%</text>
+              <text class="axis-lbl" x="90" y="159" text-anchor="start">収支差額比率 +7.2%(最高) ・ 赤字26.7%(最低)</text>
+              <text class="cat-lbl" x="10" y="188" text-anchor="start">大規模型(Ⅱ)</text>
+              <rect x="90" y="176" width="214.2" height="20" fill="#2a78d6"/>
+              <text class="val-lbl" x="314" y="191" text-anchor="start">76.5%</text>
+              <text class="axis-lbl" x="90" y="209" text-anchor="start">収支差額比率 +6.9% ・ 赤字27.3%</text>
+              <line x1="286" y1="16" x2="286" y2="220" stroke="#d03b3b" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <text class="axis-lbl" x="286" y="12" text-anchor="middle" fill="#d03b3b">分岐帯70%</text>
+            </svg>
+            <p class="chart-source">出典:福祉医療機構(WAM)「2023年度 通所介護の経営状況について」(2025年6月公表、融資先n=5,988の実データ)。サービス活動収益対サービス活動増減差額比率</p>
+          </div>
+
+          <p>興味深いのは、4区分のうち通常規模型だけが利用率70%を割り込み(67.9%)、収支・赤字率も同時に最下位という点です。利用率を10%刻みで見ても、収支がプラスに転じるのはちょうど「60〜70%」の区間(この区間だけ+0.2%とかろうじて黒字。50〜60%は▲5.7%、50%未満は▲12.8%で赤字事業所割合74.6%に達します)。<strong>「稼働率70%が損益分岐点」という業界の通説は、経験則ではなく、統計上そのまま裏付けられる転換帯</strong>だということが分かります。</p>
+          <p>ただし、ここで一つ付け加えておきたいことがあります。大規模型の稼働率が高く出ているのは、必ずしも需要が旺盛だからではありません。多くの大規模事業所は、以前はもっと大きな定員で運営していたものを、実際の利用者数の減少に合わせて<strong>定員そのものを引き下げています</strong>。分母である定員を縮小すれば、稼働率は計算上どうしても高く出ます。統計の稼働率だけを見て「大規模型はまだ余裕がある」と判断するのは早計で、実質的な供給過剰は、この数字が示す以上に深刻だというのが、現場で日々この業界を見ている実感です。</p>
+
+          <h2 id="ma">経営者の実体験:「0円でも売れない」M&A市場</h2>
+          <p>統計の裏側で実際に何が起きているか、ここからは私自身が見聞きしている話をお伝えします。デイサービスのM&A市場では、地域密着型の売却案件が明らかに増えています。しかし、その多くに買い手がつきません。</p>
+          <p>有料老人ホームであれば、赤字経営でも不動産や入居権といった資産価値があるため、M&Aの対象として成立します。ところが小規模デイサービスは事業規模そのものが小さすぎて、仲介手数料が売買価格に対して相対的に割高になり、取引自体が成り立たなくなります。実際に、事業を無償(0円)で引き継いでもらう交渉ですら、<strong style="color:var(--accent);">買い手・売り手の双方に合計で500万円規模の手数料がかかる</strong>ケースがあります。0円の譲渡価格に、消えない500万円の手数料。これが、赤字の小規模デイサービスがM&A市場でも「行き場を失う」現実です。</p>
+          <p>コンサルタントとしてこの状況から言えるのは、小規模デイサービスの経営者にとって「体力があるうちに譲渡先を探す」という選択肢は、思っているより早い段階で検討を始めないと機能しなくなるということです。赤字が定着し、利用者・職員の数が細ってから動いても、譲渡先を見つけること自体が難しくなります。<strong>事業承継やM&Aは、経営が傾いてからの「最後の手段」ではなく、黒字のうちに検討すべき経営判断の一つ</strong>だと考えています。</p>
+
+          <h2 id="jinzai">人手不足がさらに追い打ちをかける</h2>
+          <p>収支面での圧迫要因として見逃せないのが人件費です。通所介護の収入に対する給与費割合は、令和5年度決算60.7%から令和6年度決算60.9%へとじわじわ上昇しています。収入の6割超が人件費に充てられている構造は、簡単には変わりません。</p>
+
+          <p>私自身の実感として、人手不足は年を追うごとに深刻になっています。デイサービスは、無資格・未経験でも介助補助や送迎、レクリエーション運営といった形で働ける、数少ない業種の一つです。しかし、この数年で他業種の時給が軒並み上昇したことで、<strong>「資格がなくても働ける」という魅力の相対的な優位性が失われつつあります</strong>。以前ならデイサービスを選んでいたであろう層が、より時給の高い小売・物流・飲食といった業種に流れているのを、採用活動の中で肌で感じます。</p>
+          <p>介護報酬という公定価格に縛られている以上、他業種のように人件費上昇分を利用料に転嫁することはできません。最低賃金の上昇と処遇改善加算のギャップについては、<a href="saiteichingin-kaigo.html">別記事</a>で詳しく検証していますので、あわせてご覧ください。</p>
+
+          <a href="saiteichingin-kaigo.html" style="display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;padding:1.25rem 1.5rem;margin:1.5rem 0;text-decoration:none;color:inherit;">
+            <img src="../images/column-saiteichingin-kaigo.jpg" alt="最低賃金に処遇改善が追いつかない" style="width:180px;height:90px;object-fit:cover;border-radius:6px;flex-shrink:0;" loading="lazy">
+            <div style="flex:1;min-width:220px;">
+              <p style="font-weight:700;color:var(--navy-900);margin:0 0 0.5rem;font-size:1.05rem;">人件費の圧迫について、さらに詳しく</p>
+              <p style="margin:0 0 1rem;color:var(--text-body,inherit);">処遇改善加算の理論上の上限は6.3%、しかし実際に多くの事業所に効いてくる部分は3.3%。最低賃金の上昇率に、この原資は本当に足りるのか、現場目線で検証しています。</p>
+              <span class="btn btn-primary">最低賃金に処遇改善が追いつかない理由を読む →</span>
+            </div>
+          </a>
+
+          <h2 id="mirai">デイサービス経営の未来 — 淘汰の先で生き残る道</h2>
+          <p>ここまでのデータと実感を踏まえると、デイサービス経営の今後について、私は次のように考えています。</p>
+          <p>業界平均の稼働率は70%程度で頭打ちになっています。これは特別養護老人ホームなど他の介護サービスの稼働率と比べても低い水準で、需要と供給のバランスで見れば、明らかに供給過多です。この構造が数年で解消するとは考えにくく、事業所の再編・淘汰は今後も続くというのが率直な見立てです。<strong>大規模型を含めて「安全な規模」は存在せず</strong>、業界全体としての縮小均衡が進むでしょう。</p>
+          <p>それでも、デイサービスという事業モデルそのものが終わるわけではありません。生き残りの条件は一つに絞られてきていると感じています。それは、<strong>サービスの質を上げて稼働率そのものを引き上げること以外にない</strong>、ということです。値下げや規模拡大による効率化には、公定価格である以上限界があります。選ばれる理由をどれだけ明確に作れるか、そして登録者数を定員の2倍以上確保できているかどうかが、黒字と赤字を分ける実質的な分岐点になっています。</p>
+          <p>ここまでの内容を踏まえ、立場別に助言をまとめます。</p>
+          <ol style="list-style:decimal;padding-left:1.4em;margin:0 0 1.3em;color:var(--text);">
+            <li style="margin-bottom:0.9em;">これから<strong>新規開業を検討している方</strong>へ:<strong>「稼働率70%を超えるまでの資金計画」を、楽観的な想定ではなく、最初から厳しめに引いておく</strong>ことをお勧めします。開業して間もない事業所ほど登録者数の確保に苦戦しやすく、資金が尽きる前に稼働率を積み上げられるかどうかが生死を分けます。</li>
+            <li>すでに<strong>事業を運営されている方</strong>へ:稼働率と収支を規模別の相場観と照らし合わせ、譲渡や統合といった選択肢も含めて、体力のあるうちに次の一手を検討することをお勧めします。</li>
+          </ol>
+
+          <h2 id="matome">まとめ</h2>
+          <p>2026年4月時点で、デイサービス事業所数は4年連続の減少となり、これまで唯一増えていた通常規模・大規模型も、初めて減少に転じました。収支データを見る限り、この減少は単純な「儲からないから撤退」という構図ではありません。倒産・休廃業という法人単位の統計に現れるのは事業所純減のごく一部にすぎず、<strong>残りの大半は、複合経営体が本業を残したまま不採算のデイサービス部門だけを整理する、という統計に表れにくい形で進んでいる</strong>とみられます。倒産統計だけでは実態の一部しか見えません。</p>
+          <p>稼働率70%という水準は、経験則ではなく統計上の実際の損益分岐帯であり、規模の大小にかかわらず、この水準を維持できるかどうかが経営の分かれ目。業界の再編・淘汰は今後も進むと見ていますが、質を高めて稼働率を引き上げられる事業所には、なお生き残る道があると考えています。</p>
+          <p>デイサービスの経営改善や事業承継、新規開業の資金計画についてお悩みの場合は、経営コンサルタントとしてお気軽にご相談ください。</p>
+
+          <h2>参考</h2>
+          <p style="font-size:0.85rem;color:var(--text-muted);">
+          ・<a href="https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/04.html" target="_blank" rel="noopener">介護給付費等実態統計月報(令和8(2026)年4月審査分)｜厚生労働省</a><br>
+          ・<a href="https://www.joint-kaigo.com/articles/48013/" target="_blank" rel="noopener">デイサービスの事業所数、4年連続減 通常規模・大規模も減少続く＝厚労省統計｜介護ニュースJoint</a><br>
+          ・<a href="https://www.mhlw.go.jp/content/12300000/001603551.pdf" target="_blank" rel="noopener">令和7年度介護事業経営概況調査結果の概要(案)｜厚生労働省</a><br>
+          ・<a href="https://www.wam.go.jp/hp/wp-content/uploads/250627_No003.pdf" target="_blank" rel="noopener">2023年度 通所介護の経営状況について｜独立行政法人福祉医療機構(WAM)</a><br>
+          ・<a href="https://www.tsr-net.co.jp/data/detail/1202283_1527.html" target="_blank" rel="noopener">2025年「介護事業者」倒産 過去最多の176件｜東京商工リサーチ</a><br>
+          ・<a href="https://www.tsr-net.co.jp/data/detail/1202326_1527.html" target="_blank" rel="noopener">2025年「介護事業者」の休廃業・解散653件 過去最多を更新｜東京商工リサーチ</a><br>
+          ・<a href="https://www.nikkei.com/article/DGXZQOUA123FI0S6A610C2000000/" target="_blank" rel="noopener">デイサービス倒産27件で上半期最多 26年1〜5月、光熱費高響く｜日本経済新聞</a>
+          </p>
+          <p style="font-size:0.8rem;color:var(--text-muted);">※本記事は一般的な情報提供を目的としたものです。統計データは記事公開時点(2026年8月10日)で確認できた最新の公表値に基づいています。個別の経営判断にあたっては、必ず最新の公式統計をご確認のうえ、専門家にご相談ください。</p>
+        </div>
+        <div class="article-nav">
+          <a class="btn btn-navy" href="index.html">コラム一覧へ戻る</a>
+          <a class="btn btn-primary" href="../contact.html">無料相談を申し込む</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <p class="brand-name">介護経営<span>パートナーズ</span></p>
+      <p>介護施設・事業所向けの経営コンサルティングを通じて、介護に携わるすべての人を支援します。</p>
+    </div>
+    <div class="footer-col">
+      <h4>サービス</h4>
+      <ul>
+        <li><a href="../services/index.html">コンサルティングメニュー</a></li>
+        <li><a href="../consulting.html">介護経営コンサル</a></li>
+        <li><a href="../online-consultation.html">オンライン経営相談</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>コンテンツ</h4>
+      <ul>
+        <li><a href="index.html">コラム</a></li>
+        <li><a href="../case-studies.html">事例</a></li>
+        <li><a href="../profile.html">コンサル担当紹介</a></li>
+        <li><a href="../company.html">運営者情報</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>お問い合わせ</h4>
+      <ul>
+        <li><a href="../contact.html">お問い合わせフォーム</a></li>
+        <li><a href="../privacy.html">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 介護経営パートナーズ</span>
+    <a href="../privacy.html">プライバシーポリシー</a>
+  </div>
+</footer>
+
+</body>
+</html>
