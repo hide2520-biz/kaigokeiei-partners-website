@@ -988,6 +988,14 @@ article.column-article {
   .info-table td { padding-top: 6px; padding-bottom: 18px; }
 }
 
+/* 多列の比較表（診断チェックリスト等） */
+.table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); }
+.check-table { width: 100%; min-width: 640px; border-collapse: collapse; background: var(--white); font-size: 0.86rem; }
+.check-table th, .check-table td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+.check-table thead th { background: var(--bg-alt); color: var(--navy-900); font-weight: 700; white-space: nowrap; }
+.check-table tbody tr:last-child td { border-bottom: none; }
+.check-table td:first-child, .check-table th:first-child { font-weight: 700; color: var(--navy-800); }
+
 /* ==========================================================================
    プライバシーポリシー本文
    ========================================================================== */
