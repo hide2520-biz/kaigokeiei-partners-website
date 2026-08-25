@@ -632,6 +632,25 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 }
 .feature-block h3 { font-size: 1.05rem; margin-bottom: 8px; }
 .feature-block p { color: var(--text-muted); margin-bottom: 0; }
+.feature-block .check-list { margin-top: 12px; }
+.feature-block .check-list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.feature-block .check-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.feature-block .check-list li:last-child { margin-bottom: 0; }
 
 /* ==========================================================================
    事例（CASE）
@@ -692,6 +711,55 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 .case-metric .label { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 4px; }
 .case-metric .before-after { display: flex; align-items: baseline; gap: 8px; font-weight: 700; color: var(--navy-800); }
 .case-metric .before-after .arrow { color: var(--gold); }
+
+/* ==========================================================================
+   実データ分析サンプル（図表・チャート）
+   ========================================================================== */
+.analysis-sample h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+.feature-num-inline {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.chart-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+.chart-title { font-weight: 700; color: var(--navy-800); margin-bottom: 14px; font-size: 0.95rem; }
+.mini-chart { display: block; width: 100%; height: auto; }
+.chart-note { margin-top: 14px; color: var(--text-muted); font-size: 0.88rem; }
+.chart-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+.verdict-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.verdict-badge.good { background: rgba(184, 147, 74, 0.16); color: var(--gold); }
+.verdict-badge.caution { background: rgba(217, 119, 46, 0.14); color: var(--accent); }
+.verdict-badge.neutral { background: var(--bg-alt); color: var(--text-muted); }
+.chart-source { margin-top: 6px; color: var(--text-muted); font-size: 0.76rem; }
 
 /* ==========================================================================
    コラム
