@@ -413,6 +413,7 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
    セクション共通
    ========================================================================== */
 .section { padding: 72px 0; }
+.section-lead { font-size: 1rem; color: var(--text); margin-bottom: 0; }
 .section-alt { background: var(--white); }
 .section-tight { padding: 56px 0; }
 
