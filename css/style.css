@@ -656,6 +656,10 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 /* よくある失敗事例（警告トーンのfeature-block） */
 .feature-num.warning { border-color: var(--accent); color: var(--accent); }
 
+/* 小さめの装飾イラスト（AI生成） */
+.spot-illustration { display: flex; justify-content: center; margin-bottom: 4px; }
+.spot-illustration img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; }
+
 /* ==========================================================================
    開業前・開業後の詳細実行チェックリスト
    ========================================================================== */
