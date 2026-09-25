@@ -6,6 +6,11 @@
 /services/index.html                   /services/                             301!
 /columns/index.html                    /columns/                              301!
 
+# --- 削除済みページ → 後継ページ（2026-08-25にDDページを作り直した分） ---
+# Search Consoleで404として検出されていた旧URL
+/services/due-diligence                /services/due-diligence-sakoju.html    301!
+/services/due-diligence.html           /services/due-diligence-sakoju.html    301!
+
 # --- 拡張子なしURLは .html 付きに寄せる ---
 /case-studies                          /case-studies.html                     301!
 /columns/bathing-efficiency-toilet     /columns/bathing-efficiency-toilet.html 301!
