@@ -1,48 +1,56 @@
 # 重複URLを正式版に集約する（Google Search Console「代替ページ」対策）
-# 正式版: / (トップ) , /services/ , /columns/ , それ以外は .html 付き
+# 正式版: / (トップ) , /services/ /columns/ (一覧) , それ以外は拡張子なし
+#
+# Netlifyのサイト設定 pretty_urls:true により、全ページが拡張子あり/なしの両方で
+# 200を返す。canonicalタグ（弱いシグナル）だけではGoogleが独自に別URLを正規ページと
+# して選んでしまうため、301（強いシグナル）で1つに集約する。
+#
+# 2026-09-25: Netlifyの標準である拡張子なしURLを正式版とする方針に統一した。
+# 将来CMS等へ移管してもURLを維持できる。
+#
+# ページを追加したらこのファイルにも1行追加すること。
 
-# --- ディレクトリの index.html はディレクトリ形式に寄せる ---
-/index.html                            /                                      301!
-/services/index.html                   /services/                             301!
-/columns/index.html                    /columns/                              301!
+# --- index.html はディレクトリ形式に寄せる ---
+/index.html                                 /                                      301!
+/services/index.html                        /services/                             301!
+/columns/index.html                         /columns/                              301!
 
-# --- 削除済みページ → 後継ページ（2026-08-25にDDページを作り直した分） ---
-# Search Consoleで404として検出されていた旧URL
-/services/due-diligence                /services/due-diligence-sakoju.html    301!
-/services/due-diligence.html           /services/due-diligence-sakoju.html    301!
+# --- .html 付きURLは拡張子なしに寄せる ---
+/case-studies.html                          /case-studies                          301!
+/columns/bathing-efficiency-toilet.html     /columns/bathing-efficiency-toilet     301!
+/columns/break-time-efficiency.html         /columns/break-time-efficiency         301!
+/columns/corona-sales-method.html           /columns/corona-sales-method           301!
+/columns/daycare-decline-outlook.html       /columns/daycare-decline-outlook       301!
+/columns/daycare-sales-strategy.html        /columns/daycare-sales-strategy        301!
+/columns/foreign-care-workers-opinion.html  /columns/foreign-care-workers-opinion  301!
+/columns/fukuyaku-kanri-kaikaku.html        /columns/fukuyaku-kanri-kaikaku        301!
+/columns/function-training-bonus.html       /columns/function-training-bonus       301!
+/columns/gyomu-kaizen-guide.html            /columns/gyomu-kaizen-guide            301!
+/columns/kansa-taisaku-checklist.html       /columns/kansa-taisaku-checklist       301!
+/columns/manual-and-flexibility.html        /columns/manual-and-flexibility        301!
+/columns/saiteichingin-2026-mokuyasu.html   /columns/saiteichingin-2026-mokuyasu   301!
+/columns/saiteichingin-kaigo.html           /columns/saiteichingin-kaigo           301!
+/columns/sakoju-kakoikomi-problem.html      /columns/sakoju-kakoikomi-problem      301!
+/columns/shogu-kaizen-haibun-qa.html        /columns/shogu-kaizen-haibun-qa        301!
+/columns/shogu-kaizen-jisseki-hokoku.html   /columns/shogu-kaizen-jisseki-hokoku   301!
+/columns/yakkyoku-tsukaitaose.html          /columns/yakkyoku-tsukaitaose          301!
+/company.html                               /company                               301!
+/consulting.html                            /consulting                            301!
+/contact.html                               /contact                               301!
+/online-consultation.html                   /online-consultation                   301!
+/privacy.html                               /privacy                               301!
+/profile.html                               /profile                               301!
+/services/business-dd-sakoju.html           /services/business-dd-sakoju           301!
+/services/due-diligence-sakoju.html         /services/due-diligence-sakoju         301!
+/services/efficiency.html                   /services/efficiency                   301!
+/services/new-daycare.html                  /services/new-daycare                  301!
+/services/new-homecare.html                 /services/new-homecare                 301!
+/services/new-homenursing.html              /services/new-homenursing              301!
+/services/new-nursing-home.html             /services/new-nursing-home             301!
+/services/revenue-daycare.html              /services/revenue-daycare              301!
+/services/revenue-nursing-home.html         /services/revenue-nursing-home         301!
+/thank-you.html                             /thank-you                             301!
 
-# --- 拡張子なしURLは .html 付きに寄せる ---
-/case-studies                          /case-studies.html                     301!
-/columns/bathing-efficiency-toilet     /columns/bathing-efficiency-toilet.html 301!
-/columns/break-time-efficiency         /columns/break-time-efficiency.html    301!
-/columns/corona-sales-method           /columns/corona-sales-method.html      301!
-/columns/daycare-decline-outlook       /columns/daycare-decline-outlook.html  301!
-/columns/daycare-sales-strategy        /columns/daycare-sales-strategy.html   301!
-/columns/foreign-care-workers-opinion  /columns/foreign-care-workers-opinion.html 301!
-/columns/fukuyaku-kanri-kaikaku        /columns/fukuyaku-kanri-kaikaku.html   301!
-/columns/function-training-bonus       /columns/function-training-bonus.html  301!
-/columns/gyomu-kaizen-guide            /columns/gyomu-kaizen-guide.html       301!
-/columns/kansa-taisaku-checklist       /columns/kansa-taisaku-checklist.html  301!
-/columns/manual-and-flexibility        /columns/manual-and-flexibility.html   301!
-/columns/saiteichingin-2026-mokuyasu   /columns/saiteichingin-2026-mokuyasu.html 301!
-/columns/saiteichingin-kaigo           /columns/saiteichingin-kaigo.html      301!
-/columns/sakoju-kakoikomi-problem      /columns/sakoju-kakoikomi-problem.html 301!
-/columns/shogu-kaizen-haibun-qa        /columns/shogu-kaizen-haibun-qa.html   301!
-/columns/shogu-kaizen-jisseki-hokoku   /columns/shogu-kaizen-jisseki-hokoku.html 301!
-/columns/yakkyoku-tsukaitaose          /columns/yakkyoku-tsukaitaose.html     301!
-/company                               /company.html                          301!
-/consulting                            /consulting.html                       301!
-/contact                               /contact.html                          301!
-/online-consultation                   /online-consultation.html              301!
-/privacy                               /privacy.html                          301!
-/profile                               /profile.html                          301!
-/services/business-dd-sakoju           /services/business-dd-sakoju.html      301!
-/services/due-diligence-sakoju         /services/due-diligence-sakoju.html    301!
-/services/efficiency                   /services/efficiency.html              301!
-/services/new-daycare                  /services/new-daycare.html             301!
-/services/new-homecare                 /services/new-homecare.html            301!
-/services/new-homenursing              /services/new-homenursing.html         301!
-/services/new-nursing-home             /services/new-nursing-home.html        301!
-/services/revenue-daycare              /services/revenue-daycare.html         301!
-/services/revenue-nursing-home         /services/revenue-nursing-home.html    301!
-/thank-you                             /thank-you.html                        301!
+# --- 削除済みページ → 後継ページ ---
+/services/due-diligence                     /services/due-diligence-sakoju         301!
+/services/due-diligence.html                /services/due-diligence-sakoju         301!
