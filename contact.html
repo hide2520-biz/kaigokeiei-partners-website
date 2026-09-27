@@ -219,6 +219,27 @@
 </footer>
 
 <script>
+  // 問い合わせ内容の二重通知（Netlify Formsとは独立した控え）
+  // 2026-09-11に、送信完了しているのにNetlify側に記録が残らず内容を受け取れなかった事故が
+  // あったため、送信と同時に自前の関数へも内容を送り、Chatworkに控えを残す。
+  // sendBeaconはページ遷移後も送信が継続され、失敗してもフォーム送信自体には影響しない。
+  (function () {
+    var form = document.querySelector('form[name="contact"]');
+    if (!form) return;
+    form.addEventListener('submit', function () {
+      try {
+        var obj = {};
+        new FormData(form).forEach(function (v, k) { obj[k] = typeof v === 'string' ? v : ''; });
+        var blob = new Blob([JSON.stringify(obj)], { type: 'application/json' });
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon('/.netlify/functions/notify-submission', blob);
+        } else {
+          fetch('/.netlify/functions/notify-submission', { method: 'POST', body: blob, keepalive: true });
+        }
+      } catch (e) { /* 控えの送信に失敗しても本来の送信は妨げない */ }
+    });
+  })();
+
   // スクロールリビール（このページ限定の軽量演出）
   // 要素は既定で表示状態。JSが正常に動く場合のみ.reveal-armedを付けて一時的に隠し、
   // スクロールで視界に入ったら.is-visibleを付けて表示する。
