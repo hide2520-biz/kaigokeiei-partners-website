@@ -127,8 +127,8 @@
       <div class="form-box">
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
           <input type="hidden" name="form-name" value="contact">
-          <p class="hidden-field">
-            <label>この項目は入力しないでください<input name="bot-field"></label>
+          <p class="hidden-field" aria-hidden="true">
+            <label>この項目は入力しないでください<input name="bot-field" autocomplete="off" tabindex="-1"></label>
           </p>
 
           <div class="form-row">
