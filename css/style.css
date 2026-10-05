@@ -760,6 +760,19 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 .case-metric .before-after { display: flex; align-items: baseline; gap: 8px; font-weight: 700; color: var(--navy-800); }
 .case-metric .before-after .arrow { color: var(--gold); }
 
+@media (min-width: 641px) { .case-metrics.cols-3 { grid-template-columns: repeat(3, 1fr); } }
+
+/* 事例の推移表（2026-10-05 追加） */
+.case-timeline { overflow-x: auto; margin: 8px 0 12px; }
+.case-timeline table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 0.88rem; }
+.case-timeline th, .case-timeline td { padding: 9px 10px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.case-timeline th:first-child, .case-timeline td:first-child, .case-timeline th:last-child, .case-timeline td:last-child { text-align: left; }
+.case-timeline td:last-child { white-space: normal; color: var(--text-muted); min-width: 200px; }
+.case-timeline thead th { font-size: 0.78rem; color: var(--text-muted); font-weight: 700; border-bottom: 2px solid var(--navy-800); }
+.case-timeline tbody tr:last-child td { font-weight: 700; color: var(--navy-800); }
+.case-timeline td.neg { color: #b3261e; }
+.case-study .case-note { font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; }
+
 /* ==========================================================================
    実データ分析サンプル（図表・チャート）
    ========================================================================== */
