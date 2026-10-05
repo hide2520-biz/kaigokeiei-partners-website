@@ -895,6 +895,16 @@ article.column-article {
   gap: 12px;
 }
 
+/* 記事末尾の関連コラム（2026-10-05 追加：内部リンク強化） */
+.related-columns { margin-top: 36px; padding: 20px 22px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; }
+.related-columns-title { font-weight: 700; color: var(--navy-900); margin: 0 0 12px; font-size: 0.98rem; }
+.related-columns ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.related-columns li a { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; color: var(--navy-800); text-decoration: none; font-size: 0.93rem; line-height: 1.6; }
+.related-columns li a:hover { color: var(--gold); text-decoration: underline; }
+.related-tag { flex: none; font-size: 0.72rem; font-weight: 700; color: var(--navy-600); background: #fff; border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
+.related-service { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--border); font-size: 0.88rem; color: var(--text-muted); }
+.related-service a { color: var(--navy-700); font-weight: 700; }
+
 /* ==========================================================================
    準備中ページ
    ========================================================================== */
