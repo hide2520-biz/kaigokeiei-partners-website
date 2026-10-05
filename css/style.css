@@ -771,6 +771,11 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
 .case-timeline thead th { font-size: 0.78rem; color: var(--text-muted); font-weight: 700; border-bottom: 2px solid var(--navy-800); }
 .case-timeline tbody tr:last-child td { font-weight: 700; color: var(--navy-800); }
 .case-timeline td.neg { color: #b3261e; }
+.case-timeline tr.sub td { color: var(--text-muted); font-size: 0.82rem; }
+.case-chart { margin: 4px 0 20px; }
+.case-chart figcaption { font-size: 0.85rem; font-weight: 700; color: var(--navy-800); margin-bottom: 8px; }
+.case-chart-scroll { overflow-x: auto; }
+.case-chart svg { display: block; width: 100%; min-width: 560px; height: auto; }
 .case-study .case-note { font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; }
 
 /* ==========================================================================
