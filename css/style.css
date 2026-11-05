@@ -231,7 +231,7 @@ a.link-inline:hover { color: var(--gold); border-color: var(--gold); }
   .header-cta .cta-short { display: inline; }
 }
 @media (max-width: 420px) {
-  .brand .brand-name { max-width: 32vw; font-size: 0.92rem; }
+  .brand .brand-name { max-width: 46vw; font-size: 0.92rem; }
   .header-cta { padding: 7px 10px; font-size: 0.72rem; }
 }
 
