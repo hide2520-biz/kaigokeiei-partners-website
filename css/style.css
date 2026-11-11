@@ -903,6 +903,9 @@ article.column-article {
 .article-toc a { color: var(--navy-800); text-decoration: none; }
 .article-toc a:hover { text-decoration: underline; color: var(--gold); }
 .article-body h2 { scroll-margin-top: 90px; }
+/* 本文中のリンクは、地の文と見分けがつくよう色と下線を付ける */
+.article-body > p > a:not([class]) { color: var(--navy-500); text-decoration: underline; text-underline-offset: 3px; }
+.article-body > p > a:not([class]):hover { color: var(--gold); }
 .article-nav {
   margin-top: 36px;
   padding-top: 24px;
